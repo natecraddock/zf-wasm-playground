@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="zf playground">
+
+    <title>ZF PLAYGROUND</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel=icon href=data:,>
+</head>
+<body>
+    <main>
+        <h1>ZF PLAYGROUND</h1>
+
+        <div id="terminal">
+            <input type="text" name="query" id="query" placeholder=">" spellcheck="false" autocorrect="off" autofocus>
+
+            <ul id="display">
+            </ul>
+        </div>
+
+        <script src="playground.js" type="module"></script>
+
+        <p>
+            This is a playground to experiment with <a href="https://github.com/natecraddock/zf">zf</a>,
+            the fuzzy finder that excels at filtering filepaths.
+        </p>
+
+        <p>
+            Enter a search query above to filter the list of filepaths.
+        </p>
+
+        <!---
+        <details>
+            <summary>Customize</summary>
+            <br>
+            <label for="source">Edit the lines to use in the terminal above:</label>
+            <textarea id="source" name="source" rows="20">CHANGELOG.md
+LICENSE
+README.md
+build.zig
+build.zig.zon
+complete/_zf
+complete/zf
+complete/zf.fish
+doc/lib.md
+doc/zf.1
+doc/zf.md
+files.txt
+makefile
+src/EditBuffer.zig
+src/Loop.zig
+src/Previewer.zig
+src/array_toggle_set.zig
+src/clib.zig
+src/filter.zig
+src/lib.zig
+src/loop.c
+src/main.zig
+src/opts.zig
+src/term.zig
+src/ui.zig</textarea>
+
+        </details>
+    -->
+
+        <p>
+            This is powered by the <a href="https://github.com/natecraddock/zf">zf</a> ranking algorithm
+            compiled to <a href="https://developer.mozilla.org/en-US/docs/WebAssembly">WebAssembly</a>
+            with some simple JavaScript glue code.
+        </p>
+
+        <p><a href="https://github.com/natecraddock/zf-wasm-playground">View the source</a>.</p>
+    </main>
+</body>
+</html>

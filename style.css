@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: monospace;
+    font-size: 18px;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 660px;
+}
+
+@media screen and (max-width: 680px) {
+    main {
+        width: 96%;
+    }
+}
+
+a {
+    color: #181abb;
+}
+
+a:visited {
+    color: #181abb;
+}
+
+#terminal {
+    padding: 1ch;
+
+    border: solid 1px #303030;
+    border-radius: 4px;
+}
+
+input {
+    margin-bottom: 4px;
+    width: 100%;
+
+    font-family: monospace;
+    font-size: 18px;
+}
+
+#display {
+    padding: 0;
+    margin: 0;
+    padding-left: 4px;
+
+    list-style: none;
+}
+
+#display li {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+summary {
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+
+    width: 100%;
+    border: solid 1px #303030;
+    border-radius: 4px;
+}

@@ -1,0 +1,14 @@
+.{
+    .name = "zf-playground",
+    .version = "1.0.0",
+    .minimum_zig_version = "0.12.0",
+
+    .dependencies = .{
+        .zf = .{
+            .url = "https://github.com/natecraddock/zf/archive/fa11243c405ee2124c8f42bb0f6c3e7244bb39d1.tar.gz",
+            .hash = "122033789611a591bf591b4c67b5fe87d8decbac81ced43e5730befb2cf0ae72e74d",
+        },
+    },
+
+    .paths = .{""},
+}
