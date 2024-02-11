@@ -15,7 +15,7 @@
         <h1>ZF PLAYGROUND</h1>
 
         <div id="terminal">
-            <input type="text" name="query" id="query" placeholder=">" spellcheck="false" autocorrect="off" autofocus>
+            <input type="text" name="query" id="query" placeholder=">" spellcheck="false" autocorrect="off" autocapitalize="off" autofocus>
 
             <ul id="display">
             </ul>
@@ -29,42 +29,18 @@
         </p>
 
         <p>
-            Enter a search query above to filter the list of filepaths.
+            Enter a search query to filter the list of filepaths.
         </p>
 
-        <!---
-        <details>
-            <summary>Customize</summary>
-            <br>
-            <label for="source">Edit the lines to use in the terminal above:</label>
-            <textarea id="source" name="source" rows="20">CHANGELOG.md
-LICENSE
-README.md
-build.zig
-build.zig.zon
-complete/_zf
-complete/zf
-complete/zf.fish
-doc/lib.md
-doc/zf.1
-doc/zf.md
-files.txt
-makefile
-src/EditBuffer.zig
-src/Loop.zig
-src/Previewer.zig
-src/array_toggle_set.zig
-src/clib.zig
-src/filter.zig
-src/lib.zig
-src/loop.c
-src/main.zig
-src/opts.zig
-src/term.zig
-src/ui.zig</textarea>
+        <label for="source">Source:</label>
+        <select name="source" id="source">
+            <option selected>zf</option>
+            <option>Lite XL</option>
+            <option>Blender</option>
+            <option>Custom...</option>
+        </select>
 
-        </details>
-    -->
+        <textarea id="custom" name="custom" rows="10" placeholder="Enter or paste lines to use in the filter above" hidden></textarea>
 
         <p>
             This is powered by the <a href="https://github.com/natecraddock/zf">zf</a> ranking algorithm

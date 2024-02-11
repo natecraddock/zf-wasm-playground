@@ -45,6 +45,8 @@ input {
 
     font-family: monospace;
     font-size: 18px;
+
+    accent-color: #303030;
 }
 
 #display {
@@ -68,6 +70,8 @@ summary {
 
 textarea {
     resize: none;
+
+    margin-top: 1rem;
 
     width: 100%;
     border: solid 1px #303030;
