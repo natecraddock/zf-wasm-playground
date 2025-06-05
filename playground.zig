@@ -23,5 +23,5 @@ export fn rankToken(str_len: u32, filename_len: u32, token_len: u32, case_sensit
     const filename = if (filename_len != 0) filename_buf[0..filename_len] else null;
     const token = token_buf[0..token_len];
 
-    return zf.rankToken(str, filename, token, case_sensitive != 0, strict_path != 0) orelse -1.0;
+    return zf.rankToken(str, token, .{ .filename = filename, .to_lower = case_sensitive == 0, .strict_path = strict_path != 0 }) orelse -1.0;
 }

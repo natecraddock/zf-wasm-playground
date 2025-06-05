@@ -6,7 +6,6 @@ See it live: https://nathancraddock.com/zf-playground/
 
 ```
 $ zig build
-$ mv zig-out/bin/zf.wasm .
 ```
 
 ## Run
@@ -14,5 +13,5 @@ $ mv zig-out/bin/zf.wasm .
 Use a simple webserver like the one bundled with python
 
 ```
-$ python -m http.server
+$ python -m http.server -d zig-out/web
 ```

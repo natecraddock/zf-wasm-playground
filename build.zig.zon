@@ -1,12 +1,13 @@
 .{
-    .name = "zf-playground",
+    .name = .zf_playground,
+    .fingerprint = 0x9c645c149e6adf21,
     .version = "1.0.0",
-    .minimum_zig_version = "0.12.0",
+    .minimum_zig_version = "0.14.1",
 
     .dependencies = .{
         .zf = .{
-            .url = "https://github.com/natecraddock/zf/archive/fa11243c405ee2124c8f42bb0f6c3e7244bb39d1.tar.gz",
-            .hash = "122033789611a591bf591b4c67b5fe87d8decbac81ced43e5730befb2cf0ae72e74d",
+            .url = "git+https://github.com/natecraddock/zf#63b6df4c610b5198bf291264ae179320ec409a77",
+            .hash = "zf-0.10.3-OIRy8aiIAACLrBllz0zjxaH0aOe5oNm3KtEMyCntST-9",
         },
     },
 
