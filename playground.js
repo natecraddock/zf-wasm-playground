@@ -126,7 +126,7 @@ function run() {
         }
 
         return true;
-    }).sort((a, b) => a.rank > b.rank).slice(0, 10);
+    }).sort((a, b) => a.rank - b.rank).slice(0, 10);
 
     show(ranked)
 }
